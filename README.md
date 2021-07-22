@@ -1,4 +1,4 @@
-This is the example code for https://dev.to/langyizhao/helm-charts-with-or-without-kustomize-1m9j-temp-slug-9736484
+This is the example code for https://dev.to/langyizhao/helm-charts-with-or-without-kustomize-2f1j
 
 1. Example 1: `helm template without-kustomize -f values1.yaml`
 > Expected last line: `args: ["/bin/echo Hello! My company name is ABC Company"]`
