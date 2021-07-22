@@ -1,0 +1,4 @@
+commonLabels:
+  app: helloworld
+resources:
+- templates_new/pod.yaml

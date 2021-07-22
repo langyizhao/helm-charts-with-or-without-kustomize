@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld
+spec:
+  restartPolicy: Never
+  containers:
+  - name: hello
+    image: alpine
+    env:
+    command: ["/bin/sh","-c"]
+{{- if and .Values.employeeName .Values.employeeDepartment }}
+    args: ["/bin/echo My name is {{ .Values.employeeName }}. I work for {{ .Values.employeeDepartment }} department. Our company name is {{ .Values.companyName}}"]
+{{ else }}
+    args: ["/bin/echo Hello! My company name is {{ .Values.companyName }}"]
+{{ end }}

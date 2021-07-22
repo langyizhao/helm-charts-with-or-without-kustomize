@@ -1,0 +1,4 @@
+apiVersion: v2
+name: without-kustomize
+
+version: 0.1.0
